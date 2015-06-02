@@ -5,6 +5,23 @@
 
     <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Coming+Soon:400">
+
+
+    <!-- Google Fonts embed code -->
+    <script type="text/javascript">
+        (function() {
+            var link_element = document.createElement("link"),
+                s = document.getElementsByTagName("script")[0];
+            if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
+                link_element.href = "http:";
+            }
+            link_element.href += "//fonts.googleapis.com/css?family=Coming+Soon:400";
+            link_element.rel = "stylesheet";
+            link_element.type = "text/css";
+            s.parentNode.insertBefore(link_element, s);
+        })();
+    </script>
 
 </head>
 
@@ -36,8 +53,19 @@
         <div class="row">
             <div class="col-md-6">
                 <center>
-                    <img class="img img-responsive pull-left" src="./assets/images/cube.jpg" style="margin-left:20%; margin-top:5%;" width="50%">
-                    <img class="img img-responsive pull-left dh-floating dh-turn" src="./assets/images/point.png" style="margin-left:0%; margin-top:5%;" width="10%">
+
+                    <div class="wrap">
+                        <div class="cube">
+                            <div class="front">front</div>
+                            <div class="back">back</div>
+                            <div class="top">top</div>
+                            <div class="bottom">bottom</div>
+                            <div class="left">left</div>
+                            <div class="right">right</div>
+                        </div>
+                    </div>
+
+                    <img class="img img-responsive pull-left dh-floating dh-turn" src="./assets/images/point.png" style="margin-left:70%; margin-top:5%;" width="10%">
                 </center>
 
             </div>

@@ -37,6 +37,72 @@
 }
 
 .dh-mission {
+    font-size: 13px;
+    font-family: "Coming Soon";
+    font-style: normal;
+    font-weight: 400;
     font-size:44px;
-    color: #9e9e9e;
+    color: #5c5c5c;
+}
+
+.wrap {
+	perspective: 800px;
+	perspective-origin: 50% 100px;
+}
+
+.cube {
+	position: relative;
+	width: 200px;
+	transform-style: preserve-3d;
+}
+
+.cube div {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+
+.back {
+	transform: translateZ(-100px) rotateY(180deg);
+    background: rgb(245, 245, 224)
+}
+.right {
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+    background: rgb(245, 245, 224)
+}
+.left {
+	transform: rotateY(270deg) translateX(-100px);
+	transform-origin: center left;
+    background: rgb(245, 245, 224)
+}
+.top {
+	transform: rotateX(-90deg) translateY(-100px);
+	transform-origin: top center;
+    background: rgb(245, 245, 224)
+}
+.bottom {
+	transform: rotateX(90deg) translateY(100px);
+	transform-origin: bottom center;
+    background: rgb(245, 245, 224)
+}
+.front {
+	transform: translateZ(100px);
+    background: rgb(245, 245, 224);
+}
+
+@keyframes spin {
+	from { transform: rotateY(0); }
+	to { transform: rotateY(360deg); }
+}
+
+.cube {
+	/*animation: spin 10s infinite linear;*/
+}
+
+.cube:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+     animation-play-state: paused;
 }
