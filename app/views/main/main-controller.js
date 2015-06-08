@@ -1,8 +1,8 @@
-angular.module('seed-main', [])
+angular.module('dharness-main', [])
 
 
 .controller('MainController', [function(){
 
-    
+
 
 }]);
