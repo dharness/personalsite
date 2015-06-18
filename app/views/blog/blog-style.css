@@ -10,3 +10,10 @@
     padding-top: 8vh;
     color: rgb(255, 255, 255);
 }
+
+.dh-blog-list ul li{
+	margin-left: 3vw;
+ list-style-type: square;
+ list-style-position: outside;
+ list-style-image: none;
+}
