@@ -32,7 +32,11 @@ body {
     font-family: 'ABeeZee', sans-serif;
     background: #FFFFFF;
     border: none;
-    border-radius: 10px;
+    border-radius: 2px;
+    -webkit-filter: drop-shadow(2px 2px 1px shade($background-color, 20));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
     
     h3 {
         font-family: 'ABeeZee', sans-serif;
@@ -52,6 +56,13 @@ body {
     text-align: center;
     text-shadow: long-shadow($direction: 42deg, $length: 15px, $color: shade($background-color, 20), $fade: $background-color);
     color: white;
+}
+
+.dh-subheader {
+    font-family: 'ABeeZee', sans-serif;
+    text-shadow:  long-shadow($direction: 42deg, $length: 5px, $color: shade($background-color, 20), $fade: $background-color);
+    font-weight: 900;
+    font-size: 0.15em;
 }
 
 .dh-header-icon {
