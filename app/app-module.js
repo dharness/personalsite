@@ -1,1 +1,3 @@
-var app = angular.module('dharness', ['ngRoute', 'dharness-main', 'dharness-blog']);
+var app = angular.module('dharness', ['ngRoute', 'ngAnimate', 'dharness-main',
+	'dharness-blog'
+]);

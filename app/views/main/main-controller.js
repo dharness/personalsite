@@ -1,8 +1,9 @@
 angular.module('dharness-main', [])
 
 
-.controller('MainController', [function(){
+.controller('MainController', ['$scope',
 
+	function($scope) {
 
-
-}]);
+	}
+]);

@@ -1,9 +1,12 @@
 angular.module('dharness-blog', [])
 
 
-.controller('BlogController', [function(){
+.controller('BlogController', ['$scope',
 
-    $('.collapsible').collapsible();
+	function($scope)
+	{
+		$('.collapsible').collapsible();
 
 
-}]);
+	}
+]);

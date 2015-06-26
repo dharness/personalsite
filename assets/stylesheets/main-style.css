@@ -48,3 +48,7 @@ body {
     transform: scale(10);
   }
 }
+/* line 68, ../sass/main-style.scss */
+#main-loaded {
+  display: block !important;
+}
