@@ -3,44 +3,31 @@ body {
   background: #ADCECC;
 }
 
-/* line 21, ../sass/blog-style.scss */
-.dh-bg-panel {
-  background: #ADCECC;
-  border: none;
-  color: white;
+/************************************* TOP *************************************/
+/* line 24, ../sass/blog-style.scss */
+.vertical-align {
+  display: flex;
+  flex-direction: row;
 }
 
-/* line 27, ../sass/blog-style.scss */
-.dh-left-panel-top-img {
-  margin-top: -4vh;
+/* line 29, ../sass/blog-style.scss */
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Optional, to align inner items 
+     horizontally inside the column */
 }
 
-/* line 31, ../sass/blog-style.scss */
-.dh-card {
-  font-family: 'ABeeZee', sans-serif;
-  background: #FFFFFF;
-  border: none;
-  border-radius: 2px;
-  -webkit-filter: drop-shadow(2px 2px 1px #8aa5a3);
-  filter: url(#drop-shadow);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+/* line 37, ../sass/blog-style.scss */
+.dh-title-img {
+  width: 60%;
 }
+
 /* line 41, ../sass/blog-style.scss */
-.dh-card h3 {
-  font-family: 'ABeeZee', sans-serif;
-  padding-bottom: 3vh;
-}
-
-/* line 47, ../sass/blog-style.scss */
-.dh-left-nav {
-  margin-top: 3vh;
-}
-
-/* line 51, ../sass/blog-style.scss */
 .dh-blog-header {
   font-family: 'Grand Hotel', cursive;
-  font-weight: 300;
   font-size: 10vw;
   color: white;
   text-align: center;
@@ -48,30 +35,36 @@ body {
   color: white;
 }
 
-/* line 61, ../sass/blog-style.scss */
-.dh-subheader {
-  font-family: 'ABeeZee', sans-serif;
-  text-shadow: 0.03346px 0.03716px 0 #8aa5a3, 0.06691px 0.07431px 0 #8ba6a4, 0.10037px 0.11147px 0 #8ba6a4, 0.13383px 0.14863px 0 #8ba7a5, 0.16728px 0.18579px 0 #8ca7a5, 0.20074px 0.22294px 0 #8ca7a5, 0.2342px 0.2601px 0 #8ca8a6, 0.26765px 0.29726px 0 #8da8a6, 0.30111px 0.33442px 0 #8da9a7, 0.33457px 0.37157px 0 #8ea9a7, 0.36802px 0.40873px 0 #8eaaa8, 0.40148px 0.44589px 0 #8eaaa8, 0.43493px 0.48304px 0 #8faaa8, 0.46839px 0.5202px 0 #8faba9, 0.50185px 0.55736px 0 #8faba9, 0.5353px 0.59452px 0 #90acaa, 0.56876px 0.63167px 0 #90acaa, 0.60222px 0.66883px 0 #90acaa, 0.63567px 0.70599px 0 #91adab, 0.66913px 0.74314px 0 #91adab, 0.70259px 0.7803px 0 #91aeac, 0.73604px 0.81746px 0 #92aeac, 0.7695px 0.85462px 0 #92aeac, 0.80296px 0.89177px 0 #92afad, 0.83641px 0.92893px 0 #93afad, 0.86987px 0.96609px 0 #93b0ae, 0.90333px 1.00325px 0 #93b0ae, 0.93678px 1.0404px 0 #94b0ae, 0.97024px 1.07756px 0 #94b1af, 1.0037px 1.11472px 0 #95b1af, 1.03715px 1.15187px 0 #95b2b0, 1.07061px 1.18903px 0 #95b2b0, 1.10407px 1.22619px 0 #96b3b1, 1.13752px 1.26335px 0 #96b3b1, 1.17098px 1.3005px 0 #96b3b1, 1.20444px 1.33766px 0 #97b4b2, 1.23789px 1.37482px 0 #97b4b2, 1.27135px 1.41198px 0 #97b5b3, 1.3048px 1.44913px 0 #98b5b3, 1.33826px 1.48629px 0 #98b5b3, 1.37172px 1.52345px 0 #98b6b4, 1.40517px 1.5606px 0 #99b6b4, 1.43863px 1.59776px 0 #99b7b5, 1.47209px 1.63492px 0 #99b7b5, 1.50554px 1.67208px 0 #9ab7b5, 1.539px 1.70923px 0 #9ab8b6, 1.57246px 1.74639px 0 #9ab8b6, 1.60591px 1.78355px 0 #9bb9b7, 1.63937px 1.8207px 0 #9bb9b7, 1.67283px 1.85786px 0 #9cbab8, 1.70628px 1.89502px 0 #9cbab8, 1.73974px 1.93218px 0 #9cbab8, 1.7732px 1.96933px 0 #9dbbb9, 1.80665px 2.00649px 0 #9dbbb9, 1.84011px 2.04365px 0 #9dbcba, 1.87357px 2.08081px 0 #9ebcba, 1.90702px 2.11796px 0 #9ebcba, 1.94048px 2.15512px 0 #9ebdbb, 1.97394px 2.19228px 0 #9fbdbb, 2.00739px 2.22943px 0 #9fbebc, 2.04085px 2.26659px 0 #9fbebc, 2.0743px 2.30375px 0 #a0bebc, 2.10776px 2.34091px 0 #a0bfbd, 2.14122px 2.37806px 0 #a0bfbd, 2.17467px 2.41522px 0 #a1c0be, 2.20813px 2.45238px 0 #a1c0be, 2.24159px 2.48954px 0 #a1c0be, 2.27504px 2.52669px 0 #a2c1bf, 2.3085px 2.56385px 0 #a2c1bf, 2.34196px 2.60101px 0 #a3c2c0, 2.37541px 2.63816px 0 #a3c2c0, 2.40887px 2.67532px 0 #a3c3c1, 2.44233px 2.71248px 0 #a4c3c1, 2.47578px 2.74964px 0 #a4c3c1, 2.50924px 2.78679px 0 #a4c4c2, 2.5427px 2.82395px 0 #a5c4c2, 2.57615px 2.86111px 0 #a5c5c3, 2.60961px 2.89826px 0 #a5c5c3, 2.64307px 2.93542px 0 #a6c5c3, 2.67652px 2.97258px 0 #a6c6c4, 2.70998px 3.00974px 0 #a6c6c4, 2.74344px 3.04689px 0 #a7c7c5, 2.77689px 3.08405px 0 #a7c7c5, 2.81035px 3.12121px 0 #a7c7c5, 2.84381px 3.15837px 0 #a8c8c6, 2.87726px 3.19552px 0 #a8c8c6, 2.91072px 3.23268px 0 #a8c9c7, 2.94417px 3.26984px 0 #a9c9c7, 2.97763px 3.30699px 0 #a9c9c7, 3.01109px 3.34415px 0 #aacac8, 3.04454px 3.38131px 0 #aacac8, 3.078px 3.41847px 0 #aacbc9, 3.11146px 3.45562px 0 #abcbc9, 3.14491px 3.49278px 0 #abccca, 3.17837px 3.52994px 0 #abccca, 3.21183px 3.5671px 0 #acccca, 3.24528px 3.60425px 0 #accdcb, 3.27874px 3.64141px 0 #accdcb, 3.3122px 3.67857px 0 #adcecc, 3.34565px 3.71572px 0 #adcecc;
-  font-weight: 900;
-  font-size: 0.15em;
-}
-
-/* line 68, ../sass/blog-style.scss */
-.dh-header-icon {
-  width: 80%;
-}
-
-/* line 72, ../sass/blog-style.scss */
-.dh-blog-title {
-  text-align: right;
-  font-family: 'Comfortaa', cursive;
-  font-weight: 300;
-  font-size: 4vw;
-  padding-top: 8vh;
+/* line 51, ../sass/blog-style.scss */
+.dh-bg-panel {
+  background: #ADCECC;
+  border: none;
   color: white;
+  box-shadow: none;
 }
 
-/* line 83, ../sass/blog-style.scss */
+/************************************* CENTER *************************************/
+/* line 61, ../sass/blog-style.scss */
+.dh-card {
+  font-family: 'ABeeZee', sans-serif;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 2px;
+  padding: 20px;
+  padding-top: 10px;
+  -webkit-filter: drop-shadow(2px 2px 1px #8aa5a3);
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+/* line 73, ../sass/blog-style.scss */
+.dh-card h3 {
+  font-family: 'ABeeZee', sans-serif;
+  padding-bottom: 3vh;
+}
+
+/************************************* LEFT *************************************/
+/* line 84, ../sass/blog-style.scss */
 .dh-blog-list ul li {
   margin-left: 3vw;
   list-style-type: square;
@@ -79,7 +72,8 @@ body {
   list-style-image: none;
 }
 
-/* line 92, ../sass/blog-style.scss */
+/* HACK - but a small one, since loading doesnt offer this functionallity */
+/* line 95, ../sass/blog-style.scss */
 #blog-loaded {
   display: block !important;
 }

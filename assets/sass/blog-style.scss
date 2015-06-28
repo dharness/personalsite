@@ -18,21 +18,53 @@ body {
     background: $background-color;
 }
 
+
+/************************************* TOP *************************************/
+
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Optional, to align inner items 
+                              horizontally inside the column */
+}
+
+.dh-title-img {
+    width: 60%;
+}
+
+.dh-blog-header {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 10vw;
+    color: white;
+    text-align: center;
+    text-shadow: long-shadow($direction: 42deg, $length: 15px, $color: shade($background-color, 20), $fade: $background-color);
+    color: white;
+}
+
+
 .dh-bg-panel {
     background: $background-color;
     border: none;
     color: white;
+    box-shadow: none;
 }
 
-.dh-left-panel-top-img {
-    margin-top: -4vh;
-}
+/************************************* CENTER *************************************/
+
 
 .dh-card {
     font-family: 'ABeeZee', sans-serif;
     background: #FFFFFF;
     border: none;
     border-radius: 2px;
+    padding: 20px;
+    padding-top: 10px;
     -webkit-filter: drop-shadow(2px 2px 1px shade($background-color, 20));
     filter: url(#drop-shadow);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
@@ -44,39 +76,8 @@ body {
     }
 }
 
-.dh-left-nav {
-    margin-top: 3vh;
-}
+/************************************* LEFT *************************************/
 
-.dh-blog-header {
-    font-family: 'Grand Hotel', cursive;
-    font-weight: 300;
-    font-size: 10vw;
-    color: white;
-    text-align: center;
-    text-shadow: long-shadow($direction: 42deg, $length: 15px, $color: shade($background-color, 20), $fade: $background-color);
-    color: white;
-}
-
-.dh-subheader {
-    font-family: 'ABeeZee', sans-serif;
-    text-shadow:  long-shadow($direction: 42deg, $length: 5px, $color: shade($background-color, 20), $fade: $background-color);
-    font-weight: 900;
-    font-size: 0.15em;
-}
-
-.dh-header-icon {
-    width: 80%;
-}
-
-.dh-blog-title {
-    text-align: right;
-    font-family: 'Comfortaa', cursive;
-    font-weight: 300;
-    font-size: 4vw;
-    padding-top: 8vh;
-    color: rgb(255, 255, 255);
-}
 
 .dh-blog-list {
     ul {
@@ -88,6 +89,8 @@ body {
         }
     }
 }
+
+/* HACK - but a small one, since loading doesnt offer this functionallity */
 
 #blog-loaded {
     display:block!important;

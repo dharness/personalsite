@@ -1,0 +1,166 @@
+$background-color: #ADCECC;
+
+@function long-shadow($direction, $length, $color, $fade: false, $shadow-count: 100) {
+$shadows: ();
+$conversion-map: (to top: 180deg, to top right: 135deg, to right top: 135deg, to right: 90deg, to bottom right: 45deg, to right bottom: 45deg, to bottom: 0deg, to bottom left: 315deg, to left bottom: 315deg, to left: 270deg, to left top: 225deg, to top left: 225deg);
+@if map-has-key($conversion-map, $direction) {
+$direction: map-get($conversion-map, $direction);
+}
+@for $i from 1 through $shadow-count {
+$current-step: $i * $length / $shadow-count;
+$current-color: if(not $fade, $color, if(type-of($fade) == "color", mix($fade, $color, $i / $shadow-count * 100), rgba($color, 1 - $i / $shadow-count)));
+$shadows: append($shadows, (sin(0deg + $direction) * $current-step) (cos(0deg + $direction) * $current-step) 0 $current-color, "comma");
+}
+@return $shadows;
+}
+
+body {
+background: $background-color;
+}
+
+/************************************* TOP *************************************/
+
+.vertical-align {
+display: flex;
+flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+display: flex;
+align-items: center;
+justify-content: center; /* Optional, to align inner items
+horizontally inside the column */
+}
+
+.dh-title-img {
+width: 60%;
+}
+
+.dh-art-header {
+font-family: 'Grand Hotel', cursive;
+font-size: 10vw;
+text-align: center;
+text-shadow: long-shadow($direction: 42deg, $length: 15px, $color: shade($background-color, 20), $fade: $background-color);
+color: white;
+}
+
+
+.dh-bg-panel {
+background: $background-color;
+border: none;
+color: white;
+box-shadow: none;
+}
+
+/************************************* TYPES *************************************/
+
+.btn-dh {
+  background: #FFA83B;
+  padding: 30px;
+}
+
+
+/************************************* GALLLERY *************************************/
+figure {
+margin: 0;
+position: relative;
+}
+
+figure img {
+max-width: 100%;
+display: block;
+position: relative;
+}
+
+figcaption {
+position: absolute;
+top: 0;
+left: 0;
+padding: 20px;
+background: #2c3f52;
+color: #ed4e6e;
+}
+
+figcaption h3 {
+margin: 0;
+padding: 0;
+color: #fff;
+}
+
+figcaption span:before {
+content: 'by ';
+}
+
+figcaption a {
+text-align: center;
+padding: 5px 10px;
+border-radius: 2px;
+display: inline-block;
+background: #ed4e6e;
+color: #fff;
+}
+
+
+
+
+
+.cs-style-3 figure {
+overflow: hidden;
+}
+
+.cs-style-3 figure img {
+-webkit-transition: -webkit-transform 0.4s;
+-moz-transition: -moz-transform 0.4s;
+transition: transform 0.4s;
+}
+
+.cs-style-3 figure:hover img,
+.cs-style-3 figure.cs-hover img {
+-webkit-transform: translateY(-50px);
+-moz-transform: translateY(-50px);
+-ms-transform: translateY(-50px);
+transform: translateY(-50px);
+}
+
+.cs-style-3 figcaption {
+height: 100px;
+width: 100%;
+top: auto;
+bottom: 0;
+opacity: 0;
+-webkit-transform: translateY(100%);
+-moz-transform: translateY(100%);
+-ms-transform: translateY(100%);
+transform: translateY(100%);
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+opacity: 1;
+-webkit-transform: translateY(0px);
+-moz-transform: translateY(0px);
+-ms-transform: translateY(0px);
+transform: translateY(0px);
+-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+-moz-transition: -moz-transform 0.4s, opacity 0.1s;
+transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-3 figcaption a {
+position: absolute;
+bottom: 20px;
+right: 20px;
+}
+
+/* HACK - but a small one, since loading doesnt offer this functionallity */
+
+#art-loaded {
+display:block!important;
+}
