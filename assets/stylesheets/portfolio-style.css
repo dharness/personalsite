@@ -182,7 +182,7 @@ horizontally inside the column */
   border-radius: 2px;
   margin-bottom: 20px;
   -webkit-filter: drop-shadow(2px 2px 1px #8aa5a3);
-  filter: url(#drop-shadow);
+  filter: drop-shadow(2px 2px 1px #8aa5a3);
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
