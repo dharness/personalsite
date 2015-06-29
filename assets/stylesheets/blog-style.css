@@ -1,16 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
 /* line 17, ../sass/blog-style.scss */
 body {
   background: #ADCECC;
 }
 
 /************************************* TOP *************************************/
-/* line 24, ../sass/blog-style.scss */
+/* line 26, ../sass/blog-style.scss */
 .vertical-align {
   display: flex;
   flex-direction: row;
 }
 
-/* line 29, ../sass/blog-style.scss */
+/* line 31, ../sass/blog-style.scss */
 .vertical-align > [class^="col-"],
 .vertical-align > [class*=" col-"] {
   display: flex;
@@ -20,12 +21,12 @@ body {
      horizontally inside the column */
 }
 
-/* line 37, ../sass/blog-style.scss */
+/* line 39, ../sass/blog-style.scss */
 .dh-title-img {
   width: 60%;
 }
 
-/* line 41, ../sass/blog-style.scss */
+/* line 43, ../sass/blog-style.scss */
 .dh-blog-header {
   font-family: 'Grand Hotel', cursive;
   font-size: 10vw;
@@ -35,7 +36,7 @@ body {
   color: white;
 }
 
-/* line 51, ../sass/blog-style.scss */
+/* line 53, ../sass/blog-style.scss */
 .dh-bg-panel {
   background: #ADCECC;
   border: none;
@@ -44,7 +45,7 @@ body {
 }
 
 /************************************* CENTER *************************************/
-/* line 61, ../sass/blog-style.scss */
+/* line 63, ../sass/blog-style.scss */
 .dh-card {
   font-family: 'ABeeZee', sans-serif;
   background: #FFFFFF;
@@ -57,14 +58,14 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
-/* line 73, ../sass/blog-style.scss */
+/* line 75, ../sass/blog-style.scss */
 .dh-card h3 {
   font-family: 'ABeeZee', sans-serif;
   padding-bottom: 3vh;
 }
 
 /************************************* LEFT *************************************/
-/* line 84, ../sass/blog-style.scss */
+/* line 86, ../sass/blog-style.scss */
 .dh-blog-list ul li {
   margin-left: 3vw;
   list-style-type: square;
@@ -73,7 +74,7 @@ body {
 }
 
 /* HACK - but a small one, since loading doesnt offer this functionallity */
-/* line 95, ../sass/blog-style.scss */
+/* line 97, ../sass/blog-style.scss */
 #blog-loaded {
   display: block !important;
 }

@@ -1,16 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
 /* line 18, ../sass/art-style.scss */
 body {
   background: #ADCECC;
 }
 
 /************************************* TOP *************************************/
-/* line 24, ../sass/art-style.scss */
+/* line 25, ../sass/art-style.scss */
 .vertical-align {
   display: flex;
   flex-direction: row;
 }
 
-/* line 29, ../sass/art-style.scss */
+/* line 30, ../sass/art-style.scss */
 .vertical-align > [class^="col-"],
 .vertical-align > [class*=" col-"] {
   display: flex;
@@ -20,12 +21,12 @@ body {
 horizontally inside the column */
 }
 
-/* line 37, ../sass/art-style.scss */
+/* line 38, ../sass/art-style.scss */
 .dh-title-img {
   width: 60%;
 }
 
-/* line 41, ../sass/art-style.scss */
+/* line 42, ../sass/art-style.scss */
 .dh-art-header {
   font-family: 'Grand Hotel', cursive;
   font-size: 10vw;
@@ -34,7 +35,7 @@ horizontally inside the column */
   color: white;
 }
 
-/* line 50, ../sass/art-style.scss */
+/* line 51, ../sass/art-style.scss */
 .dh-bg-panel {
   background: #ADCECC;
   border: none;
@@ -43,7 +44,7 @@ horizontally inside the column */
 }
 
 /************************************* TYPES *************************************/
-/* line 59, ../sass/art-style.scss */
+/* line 60, ../sass/art-style.scss */
 .dh-card {
   font-family: 'ABeeZee', sans-serif;
   background: #FFFFFF;
@@ -56,12 +57,12 @@ horizontally inside the column */
   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
 
-/* line 72, ../sass/art-style.scss */
+/* line 73, ../sass/art-style.scss */
 .dh-suggestive-input {
   border: none;
 }
 
-/* line 77, ../sass/art-style.scss */
+/* line 78, ../sass/art-style.scss */
 input:focus,
 select:focus,
 textarea:focus,
@@ -70,20 +71,20 @@ button:focus {
 }
 
 /************************************* GALLLERY *************************************/
-/* line 87, ../sass/art-style.scss */
+/* line 88, ../sass/art-style.scss */
 figure {
   margin: 0;
   position: relative;
 }
 
-/* line 92, ../sass/art-style.scss */
+/* line 93, ../sass/art-style.scss */
 figure img {
   max-width: 100%;
   display: block;
   position: relative;
 }
 
-/* line 98, ../sass/art-style.scss */
+/* line 99, ../sass/art-style.scss */
 figcaption {
   position: absolute;
   top: 0;
@@ -93,19 +94,19 @@ figcaption {
   color: #ed4e6e;
 }
 
-/* line 107, ../sass/art-style.scss */
+/* line 108, ../sass/art-style.scss */
 figcaption h3 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
 
-/* line 113, ../sass/art-style.scss */
+/* line 114, ../sass/art-style.scss */
 figcaption span:before {
   content: 'by ';
 }
 
-/* line 117, ../sass/art-style.scss */
+/* line 118, ../sass/art-style.scss */
 figcaption a {
   text-align: center;
   padding: 5px 10px;
@@ -115,19 +116,19 @@ figcaption a {
   color: #fff;
 }
 
-/* line 130, ../sass/art-style.scss */
+/* line 131, ../sass/art-style.scss */
 .cs-style-3 figure {
   overflow: hidden;
 }
 
-/* line 134, ../sass/art-style.scss */
+/* line 135, ../sass/art-style.scss */
 .cs-style-3 figure img {
   -webkit-transition: -webkit-transform 0.4s;
   -moz-transition: -moz-transform 0.4s;
   transition: transform 0.4s;
 }
 
-/* line 140, ../sass/art-style.scss */
+/* line 141, ../sass/art-style.scss */
 .cs-style-3 figure:hover img,
 .cs-style-3 figure.cs-hover img {
   -webkit-transform: translateY(-50px);
@@ -136,7 +137,7 @@ figcaption a {
   transform: translateY(-50px);
 }
 
-/* line 148, ../sass/art-style.scss */
+/* line 149, ../sass/art-style.scss */
 .cs-style-3 figcaption {
   height: 100px;
   width: 100%;
@@ -155,7 +156,7 @@ figcaption a {
   transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-/* line 166, ../sass/art-style.scss */
+/* line 167, ../sass/art-style.scss */
 .cs-style-3 figure:hover figcaption,
 .cs-style-3 figure.cs-hover figcaption {
   opacity: 1;
@@ -168,7 +169,7 @@ figcaption a {
   transition: transform 0.4s, opacity 0.1s;
 }
 
-/* line 178, ../sass/art-style.scss */
+/* line 179, ../sass/art-style.scss */
 .cs-style-3 figcaption a {
   position: absolute;
   bottom: 20px;
@@ -176,7 +177,7 @@ figcaption a {
 }
 
 /* HACK - but a small one, since loading doesnt offer this functionallity */
-/* line 186, ../sass/art-style.scss */
+/* line 187, ../sass/art-style.scss */
 #art-loaded {
   display: block !important;
 }

@@ -2,6 +2,7 @@
  * Tooltip Styles
  */
 /* Base styles for the entire tooltip */
+@import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
 /* line 9, ../sass/_tooltip.scss */
 [data-tooltip]:before,
 [data-tooltip]:after,

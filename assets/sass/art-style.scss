@@ -18,6 +18,7 @@ $shadows: append($shadows, (sin(0deg + $direction) * $current-step) (cos(0deg + 
 body {
 background: $background-color;
 }
+@import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
 
 /************************************* TOP *************************************/
 
