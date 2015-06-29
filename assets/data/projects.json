@@ -1,0 +1,19 @@
+{
+	"projects": [
+		{
+			"title": "Pricer",
+			"date": "2015-04-12",
+			"liveLink": "",
+			"github": "https://github.com/dharness/pricer",
+			"images": ["pricer/login.jpg"],
+			"techStack": ["cordova", "node", "polymer", "html", "javascript", "css",
+				"mongodb"
+			],
+			"description": "A Cordova application targeted at the android platform. Simplifies the struggle of collecting coupons by amalgamating them in one place with a simple swipe interface. Users can save coupons for later use or discard unwanted coupons.Uses basic MachineLearning library to anaylses the preferences of users and present only the most relevant coupons. Mongo Datastores and Polymer for UI components and data-binding"
+
+		}
+
+
+	]
+
+}

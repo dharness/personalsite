@@ -1,40 +1,39 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html ng-app="dharness">
-  <head>
+    <head>
+        
+        <title> dharness </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'/>
+        
+        <!-- LIBRARIES -->
+        <script src="assets/node_modules/jquery/dist/jquery.js"></script>
+        <script src="assets/node_modules/angular/angular.js"></script>
+        <script src="assets/node_modules/angular-route/angular-route.js"></script>
+        <script src="assets/node_modules/ng-tags-input/build/ng-tags-input.min.js"></script>
+        <script src="assets/node_modules/angular-animate/angular-animate.js"></script>
+        <script src="assets/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
-    <title> dharness </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-
-    <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'/>
-
-    <!-- LIBRARIES -->
-    <script src="assets/node_modules/jquery/dist/jquery.js"></script>
-    <script src="assets/node_modules/angular/angular.js"></script>
-    <script src="assets/node_modules/angular-route/angular-route.js"></script>
-    <script src="assets/node_modules/angular-animate/angular-animate.js"></script>
-    <script src="assets/node_modules/materialize-css/bin/materialize.js"></script>
-    <script src="assets/node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="assets/node_modules/flat-ui/js/application.js"></script>
-    <script src="assets/node_modules/flat-ui/js/flat-ui.min.js"></script>
-
-    <!-- VIEWS -->
-    <script type="text/javascript" src="app/views/main/main-controller.js"></script>
-    <script type="text/javascript" src="app/views/blog/blog-controller.js"></script>
-    <script type="text/javascript" src="app/views/art/art-controller.js"></script>
-
-    <!-- MAIN APP FILES -->
-    <script type="text/javascript" src="app/app-module.js"></script>
-    <script type="text/javascript" src="app/app-routes.js"></script>
-
-    <!-- STYLES -->
-    <!-- <link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="assets/node_modules/materialize-css/bin/materialize.css">
-    <link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/node_modules/flat-ui/css/flat-ui.css">
-
-	<body>
-	    <!-- this is where content will be injected -->
+        
+        <!-- VIEWS -->
+        <script type="text/javascript" src="app/views/main/main-controller.js"></script>
+        <script type="text/javascript" src="app/views/blog/blog-controller.js"></script>
+        <script type="text/javascript" src="app/views/art/art-controller.js"></script>
+        <script type="text/javascript" src="app/views/portfolio/profiterole-controller.js"></script>
+        
+        <!-- MAIN APP FILES -->
+        <script type="text/javascript" src="app/app-module.js"></script>
+        <script type="text/javascript" src="app/app-routes.js"></script>
+        
+        <!-- STYLES -->
+        <link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/node_modules/ng-tags-input/build/ng-tags-input.css">
+    </head>
+    <body>
+        <!-- this is where content will be injected -->
         <div ng-view></div>
-	</body>
+    </body>
+</html>

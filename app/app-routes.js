@@ -8,10 +8,15 @@ app.config(function($routeProvider)
 		controller: 'MainController'
 	})
 
+	.when('/technical-profiterole',
+	{
+		templateUrl: 'app/views/portfolio/portfolio.html',
+		controller: 'ProfiteroleController'
+	})
+
 	.when('/aboot',
 	{
-		templateUrl: 'app/views/about/about-view.html',
-		controller: 'MainController'
+		templateUrl: 'app/views/about/about-view.html'
 	})
 
 	.when('/art',
