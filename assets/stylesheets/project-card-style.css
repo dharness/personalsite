@@ -1,0 +1,64 @@
+/*  VARIABLES */
+/* FUNCTIONS */
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
+@import url(http://fonts.googleapis.com/css?family=ABeeZee);
+/* STYLES */
+/* line 31, ../sass/_utilities.scss */
+body {
+  background: white;
+}
+
+/* line 3, ../sass/project-card-style.scss */
+.dh-tech-item {
+  font-family: 'ABeeZee', sans-serif;
+  background: #FFFFFF;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  -webkit-filter: drop-shadow(2px 2px 1px #cccccc);
+  filter: drop-shadow(2px 2px 1px #cccccc);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+/* line 13, ../sass/project-card-style.scss */
+.dh-tech-item .dh-tech-img-main {
+  margin: 10px;
+}
+/* line 17, ../sass/project-card-style.scss */
+.dh-tech-item .dh-link-stack {
+  padding: 20px;
+  padding-top: 30px;
+}
+/* line 22, ../sass/project-card-style.scss */
+.dh-tech-item .dh-tech-title {
+  font-size: 2em;
+  margin-top: 8px;
+}
+/* line 27, ../sass/project-card-style.scss */
+.dh-tech-item p {
+  color: #96A7B1;
+}
+/* line 31, ../sass/project-card-style.scss */
+.dh-tech-item hr {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 39, ../sass/project-card-style.scss */
+.dh-tech-item .dh-tech-stack {
+  padding: 10px;
+}
+/* line 42, ../sass/project-card-style.scss */
+.dh-tech-item .dh-tech-stack img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 49, ../sass/project-card-style.scss */
+.dh-tech-item .dh-truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

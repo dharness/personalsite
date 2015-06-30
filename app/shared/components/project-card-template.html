@@ -1,0 +1,49 @@
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="./assets/stylesheets/project-card-style.css">
+
+</head>
+
+<div class="dh-tech-item">
+	<div class="row">
+		
+		<div class="col-md-3">
+			<img class="img-responsive dh-tech-img-main" src="./assets/images/projects/{{project.images[0]}}"/>
+		</div>
+		
+		<div class="col-md-5">
+			<div class="dh-tech-title"> {{project.title}} </div>
+			<p id="project-{{$index}}" class="dh-truncate"> <i> {{project.description}}  </i></p>
+			<button >More</button>
+		</div>
+		
+		
+		<div class="col-md-4  dh-link-stack" >
+			<div class="col-md-6 ">
+				<img class="img-responsive" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"/>
+			</div>
+			<div class="col-md-6">
+				<img class="img-responsive" src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/external_link.png"/>
+			</div>
+			
+			
+		</div>
+	</div>
+	<hr>
+	
+	<div class="row dh-tech-stack">
+		
+		<div ng-repeat="tech in project.techStack track by $index">
+			
+			<div class="col-md-{{Math.floor(12/project.techStack.length)}}">
+				<a href="#" class="tooltip-bottom" data-tooltip="{{tech}}" >
+					
+					<img class="img-responsive tooltip-bottom" src="./assets/images/projects/tech_logos/{{tech}}.png"/>
+				</a>
+				
+				
+			</div>
+		</div>
+		
+	</div>
+</div>

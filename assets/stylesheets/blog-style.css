@@ -1,17 +1,22 @@
+/*  VARIABLES */
+/* FUNCTIONS */
+/* FONTS */
 @import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
-/* line 17, ../sass/blog-style.scss */
+@import url(http://fonts.googleapis.com/css?family=ABeeZee);
+/* STYLES */
+/* line 31, ../sass/_utilities.scss */
 body {
-  background: #ADCECC;
+  background: white;
 }
 
 /************************************* TOP *************************************/
-/* line 26, ../sass/blog-style.scss */
+/* line 5, ../sass/blog-style.scss */
 .vertical-align {
   display: flex;
   flex-direction: row;
 }
 
-/* line 31, ../sass/blog-style.scss */
+/* line 10, ../sass/blog-style.scss */
 .vertical-align > [class^="col-"],
 .vertical-align > [class*=" col-"] {
   display: flex;
@@ -21,31 +26,31 @@ body {
      horizontally inside the column */
 }
 
-/* line 39, ../sass/blog-style.scss */
+/* line 18, ../sass/blog-style.scss */
 .dh-title-img {
   width: 60%;
 }
 
-/* line 43, ../sass/blog-style.scss */
+/* line 22, ../sass/blog-style.scss */
 .dh-blog-header {
   font-family: 'Grand Hotel', cursive;
   font-size: 10vw;
   color: white;
   text-align: center;
-  text-shadow: 0.10037px 0.11147px 0 #8aa5a3, 0.20074px 0.22294px 0 #8ba6a4, 0.30111px 0.33442px 0 #8ba6a4, 0.40148px 0.44589px 0 #8ba7a5, 0.50185px 0.55736px 0 #8ca7a5, 0.60222px 0.66883px 0 #8ca7a5, 0.70259px 0.7803px 0 #8ca8a6, 0.80296px 0.89177px 0 #8da8a6, 0.90333px 1.00325px 0 #8da9a7, 1.0037px 1.11472px 0 #8ea9a7, 1.10407px 1.22619px 0 #8eaaa8, 1.20444px 1.33766px 0 #8eaaa8, 1.3048px 1.44913px 0 #8faaa8, 1.40517px 1.5606px 0 #8faba9, 1.50554px 1.67208px 0 #8faba9, 1.60591px 1.78355px 0 #90acaa, 1.70628px 1.89502px 0 #90acaa, 1.80665px 2.00649px 0 #90acaa, 1.90702px 2.11796px 0 #91adab, 2.00739px 2.22943px 0 #91adab, 2.10776px 2.34091px 0 #91aeac, 2.20813px 2.45238px 0 #92aeac, 2.3085px 2.56385px 0 #92aeac, 2.40887px 2.67532px 0 #92afad, 2.50924px 2.78679px 0 #93afad, 2.60961px 2.89826px 0 #93b0ae, 2.70998px 3.00974px 0 #93b0ae, 2.81035px 3.12121px 0 #94b0ae, 2.91072px 3.23268px 0 #94b1af, 3.01109px 3.34415px 0 #95b1af, 3.11146px 3.45562px 0 #95b2b0, 3.21183px 3.5671px 0 #95b2b0, 3.3122px 3.67857px 0 #96b3b1, 3.41257px 3.79004px 0 #96b3b1, 3.51294px 3.90151px 0 #96b3b1, 3.61331px 4.01298px 0 #97b4b2, 3.71367px 4.12445px 0 #97b4b2, 3.81404px 4.23593px 0 #97b5b3, 3.91441px 4.3474px 0 #98b5b3, 4.01478px 4.45887px 0 #98b5b3, 4.11515px 4.57034px 0 #98b6b4, 4.21552px 4.68181px 0 #99b6b4, 4.31589px 4.79328px 0 #99b7b5, 4.41626px 4.90476px 0 #99b7b5, 4.51663px 5.01623px 0 #9ab7b5, 4.617px 5.1277px 0 #9ab8b6, 4.71737px 5.23917px 0 #9ab8b6, 4.81774px 5.35064px 0 #9bb9b7, 4.91811px 5.46211px 0 #9bb9b7, 5.01848px 5.57359px 0 #9cbab8, 5.11885px 5.68506px 0 #9cbab8, 5.21922px 5.79653px 0 #9cbab8, 5.31959px 5.908px 0 #9dbbb9, 5.41996px 6.01947px 0 #9dbbb9, 5.52033px 6.13094px 0 #9dbcba, 5.6207px 6.24242px 0 #9ebcba, 5.72107px 6.35389px 0 #9ebcba, 5.82144px 6.46536px 0 #9ebdbb, 5.92181px 6.57683px 0 #9fbdbb, 6.02218px 6.6883px 0 #9fbebc, 6.12255px 6.79978px 0 #9fbebc, 6.22291px 6.91125px 0 #a0bebc, 6.32328px 7.02272px 0 #a0bfbd, 6.42365px 7.13419px 0 #a0bfbd, 6.52402px 7.24566px 0 #a1c0be, 6.62439px 7.35713px 0 #a1c0be, 6.72476px 7.46861px 0 #a1c0be, 6.82513px 7.58008px 0 #a2c1bf, 6.9255px 7.69155px 0 #a2c1bf, 7.02587px 7.80302px 0 #a3c2c0, 7.12624px 7.91449px 0 #a3c2c0, 7.22661px 8.02596px 0 #a3c3c1, 7.32698px 8.13744px 0 #a4c3c1, 7.42735px 8.24891px 0 #a4c3c1, 7.52772px 8.36038px 0 #a4c4c2, 7.62809px 8.47185px 0 #a5c4c2, 7.72846px 8.58332px 0 #a5c5c3, 7.82883px 8.69479px 0 #a5c5c3, 7.9292px 8.80627px 0 #a6c5c3, 8.02957px 8.91774px 0 #a6c6c4, 8.12994px 9.02921px 0 #a6c6c4, 8.23031px 9.14068px 0 #a7c7c5, 8.33068px 9.25215px 0 #a7c7c5, 8.43105px 9.36362px 0 #a7c7c5, 8.53142px 9.4751px 0 #a8c8c6, 8.63178px 9.58657px 0 #a8c8c6, 8.73215px 9.69804px 0 #a8c9c7, 8.83252px 9.80951px 0 #a9c9c7, 8.93289px 9.92098px 0 #a9c9c7, 9.03326px 10.03246px 0 #aacac8, 9.13363px 10.14393px 0 #aacac8, 9.234px 10.2554px 0 #aacbc9, 9.33437px 10.36687px 0 #abcbc9, 9.43474px 10.47834px 0 #abccca, 9.53511px 10.58981px 0 #abccca, 9.63548px 10.70129px 0 #acccca, 9.73585px 10.81276px 0 #accdcb, 9.83622px 10.92423px 0 #accdcb, 9.93659px 11.0357px 0 #adcecc, 10.03696px 11.14717px 0 #adcecc;
-  color: white;
+  text-shadow: 0.10037px 0.11147px 0 #cdcdcd, 0.20074px 0.22294px 0 #cdcdcd, 0.30111px 0.33442px 0 #cecece, 0.40148px 0.44589px 0 #cecece, 0.50185px 0.55736px 0 #cfcfcf, 0.60222px 0.66883px 0 #cfcfcf, 0.70259px 0.7803px 0 #d0d0d0, 0.80296px 0.89177px 0 #d0d0d0, 0.90333px 1.00325px 0 #d1d1d1, 1.0037px 1.11472px 0 #d1d1d1, 1.10407px 1.22619px 0 #d2d2d2, 1.20444px 1.33766px 0 #d2d2d2, 1.3048px 1.44913px 0 lightgray, 1.40517px 1.5606px 0 lightgray, 1.50554px 1.67208px 0 #d4d4d4, 1.60591px 1.78355px 0 #d4d4d4, 1.70628px 1.89502px 0 #d5d5d5, 1.80665px 2.00649px 0 #d5d5d5, 1.90702px 2.11796px 0 #d6d6d6, 2.00739px 2.22943px 0 #d6d6d6, 2.10776px 2.34091px 0 #d7d7d7, 2.20813px 2.45238px 0 #d7d7d7, 2.3085px 2.56385px 0 #d8d8d8, 2.40887px 2.67532px 0 #d8d8d8, 2.50924px 2.78679px 0 #d9d9d9, 2.60961px 2.89826px 0 #d9d9d9, 2.70998px 3.00974px 0 #dadada, 2.81035px 3.12121px 0 #dadada, 2.91072px 3.23268px 0 #dbdbdb, 3.01109px 3.34415px 0 #dbdbdb, 3.11146px 3.45562px 0 gainsboro, 3.21183px 3.5671px 0 gainsboro, 3.3122px 3.67857px 0 #dddddd, 3.41257px 3.79004px 0 #dddddd, 3.51294px 3.90151px 0 #dedede, 3.61331px 4.01298px 0 #dedede, 3.71367px 4.12445px 0 #dfdfdf, 3.81404px 4.23593px 0 #dfdfdf, 3.91441px 4.3474px 0 #e0e0e0, 4.01478px 4.45887px 0 #e0e0e0, 4.11515px 4.57034px 0 #e1e1e1, 4.21552px 4.68181px 0 #e1e1e1, 4.31589px 4.79328px 0 #e2e2e2, 4.41626px 4.90476px 0 #e2e2e2, 4.51663px 5.01623px 0 #e3e3e3, 4.617px 5.1277px 0 #e3e3e3, 4.71737px 5.23917px 0 #e4e4e4, 4.81774px 5.35064px 0 #e4e4e4, 4.91811px 5.46211px 0 #e5e5e5, 5.01848px 5.57359px 0 #e6e6e6, 5.11885px 5.68506px 0 #e6e6e6, 5.21922px 5.79653px 0 #e7e7e7, 5.31959px 5.908px 0 #e7e7e7, 5.41996px 6.01947px 0 #e8e8e8, 5.52033px 6.13094px 0 #e8e8e8, 5.6207px 6.24242px 0 #e9e9e9, 5.72107px 6.35389px 0 #e9e9e9, 5.82144px 6.46536px 0 #eaeaea, 5.92181px 6.57683px 0 #eaeaea, 6.02218px 6.6883px 0 #ebebeb, 6.12255px 6.79978px 0 #ebebeb, 6.22291px 6.91125px 0 #ececec, 6.32328px 7.02272px 0 #ececec, 6.42365px 7.13419px 0 #ededed, 6.52402px 7.24566px 0 #ededed, 6.62439px 7.35713px 0 #eeeeee, 6.72476px 7.46861px 0 #eeeeee, 6.82513px 7.58008px 0 #efefef, 6.9255px 7.69155px 0 #efefef, 7.02587px 7.80302px 0 #f0f0f0, 7.12624px 7.91449px 0 #f0f0f0, 7.22661px 8.02596px 0 #f1f1f1, 7.32698px 8.13744px 0 #f1f1f1, 7.42735px 8.24891px 0 #f2f2f2, 7.52772px 8.36038px 0 #f2f2f2, 7.62809px 8.47185px 0 #f3f3f3, 7.72846px 8.58332px 0 #f3f3f3, 7.82883px 8.69479px 0 #f4f4f4, 7.9292px 8.80627px 0 #f4f4f4, 8.02957px 8.91774px 0 whitesmoke, 8.12994px 9.02921px 0 whitesmoke, 8.23031px 9.14068px 0 #f6f6f6, 8.33068px 9.25215px 0 #f6f6f6, 8.43105px 9.36362px 0 #f7f7f7, 8.53142px 9.4751px 0 #f7f7f7, 8.63178px 9.58657px 0 #f8f8f8, 8.73215px 9.69804px 0 #f8f8f8, 8.83252px 9.80951px 0 #f9f9f9, 8.93289px 9.92098px 0 #f9f9f9, 9.03326px 10.03246px 0 #fafafa, 9.13363px 10.14393px 0 #fafafa, 9.234px 10.2554px 0 #fbfbfb, 9.33437px 10.36687px 0 #fbfbfb, 9.43474px 10.47834px 0 #fcfcfc, 9.53511px 10.58981px 0 #fcfcfc, 9.63548px 10.70129px 0 #fdfdfd, 9.73585px 10.81276px 0 #fdfdfd, 9.83622px 10.92423px 0 #fefefe, 9.93659px 11.0357px 0 #fefefe, 10.03696px 11.14717px 0 white;
+  color: #444442;
 }
 
-/* line 53, ../sass/blog-style.scss */
+/* line 32, ../sass/blog-style.scss */
 .dh-bg-panel {
-  background: #ADCECC;
+  background: white;
   border: none;
   color: white;
   box-shadow: none;
 }
 
 /************************************* CENTER *************************************/
-/* line 63, ../sass/blog-style.scss */
+/* line 42, ../sass/blog-style.scss */
 .dh-card {
   font-family: 'ABeeZee', sans-serif;
   background: #FFFFFF;
@@ -53,19 +58,19 @@ body {
   border-radius: 2px;
   padding: 20px;
   padding-top: 10px;
-  -webkit-filter: drop-shadow(2px 2px 1px #8aa5a3);
-  filter: drop-shadow(2px 2px 1px #8aa5a3);
+  -webkit-filter: drop-shadow(2px 2px 1px #cccccc);
+  filter: drop-shadow(2px 2px 1px #cccccc);
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
-/* line 75, ../sass/blog-style.scss */
+/* line 54, ../sass/blog-style.scss */
 .dh-card h3 {
   font-family: 'ABeeZee', sans-serif;
   padding-bottom: 3vh;
 }
 
 /************************************* LEFT *************************************/
-/* line 86, ../sass/blog-style.scss */
+/* line 65, ../sass/blog-style.scss */
 .dh-blog-list ul li {
   margin-left: 3vw;
   list-style-type: square;
@@ -74,7 +79,7 @@ body {
 }
 
 /* HACK - but a small one, since loading doesnt offer this functionallity */
-/* line 97, ../sass/blog-style.scss */
+/* line 76, ../sass/blog-style.scss */
 #blog-loaded {
   display: block !important;
 }

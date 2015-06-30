@@ -1,5 +1,12 @@
-$background-color: #ADCECC;
+/*  VARIABLES */
 
+$background-color: #ADCECC;
+$background-color: white;
+$h-color: #444442;
+$deep-blue: #2c3f52;
+
+
+/* FUNCTIONS */
 
 @function long-shadow($direction, $length, $color, $fade: false, $shadow-count: 100) {
     $shadows: ();
@@ -14,3 +21,14 @@ $background-color: #ADCECC;
     }
     @return $shadows;
 }
+
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
+@import url(http://fonts.googleapis.com/css?family=ABeeZee);
+
+/* STYLES */
+
+body {
+    background: $background-color;
+}
+
