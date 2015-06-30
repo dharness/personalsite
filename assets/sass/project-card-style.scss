@@ -5,10 +5,13 @@
     background: #FFFFFF;
     border-radius: 2px;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px shade($background-color, 20);
     -webkit-filter: drop-shadow(2px 2px 1px shade($background-color, 20));
     filter: drop-shadow(2px 2px 1px shade($background-color, 20));
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+
+    transition: all .2s ease-in-out;
 
     .dh-tech-img-main {
     	margin: 10px;
@@ -56,4 +59,9 @@
     }
 
   
+}
+
+.dh-tech-item:hover {
+    box-shadow: 0 0 20px shade($background-color, 20);
+    transform: scale(1.01);
 }

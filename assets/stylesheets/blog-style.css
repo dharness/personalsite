@@ -53,7 +53,8 @@ body {
 /* line 42, ../sass/blog-style.scss */
 .dh-card {
   font-family: 'ABeeZee', sans-serif;
-  background: #FFFFFF;
+  background: #444442;
+  color: white;
   border: none;
   border-radius: 2px;
   padding: 20px;
@@ -63,14 +64,14 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
-/* line 54, ../sass/blog-style.scss */
+/* line 55, ../sass/blog-style.scss */
 .dh-card h3 {
   font-family: 'ABeeZee', sans-serif;
   padding-bottom: 3vh;
 }
 
 /************************************* LEFT *************************************/
-/* line 65, ../sass/blog-style.scss */
+/* line 66, ../sass/blog-style.scss */
 .dh-blog-list ul li {
   margin-left: 3vw;
   list-style-type: square;
@@ -79,7 +80,7 @@ body {
 }
 
 /* HACK - but a small one, since loading doesnt offer this functionallity */
-/* line 76, ../sass/blog-style.scss */
+/* line 77, ../sass/blog-style.scss */
 #blog-loaded {
   display: block !important;
 }

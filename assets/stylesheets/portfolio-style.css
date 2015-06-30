@@ -62,7 +62,7 @@ body {
 /* line 61, ../sass/_tooltip.scss */
 .tooltip:after,
 [data-tooltip]:after {
-  z-index: 1000;
+  z-index: -99999;
   padding: 8px;
   margin-left: 3px;
   background-color: #000;

@@ -15,50 +15,58 @@ body {
   background: #FFFFFF;
   border-radius: 2px;
   margin-bottom: 20px;
+  box-shadow: 0 0 10px #cccccc;
   -webkit-filter: drop-shadow(2px 2px 1px #cccccc);
   filter: drop-shadow(2px 2px 1px #cccccc);
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  transition: all .2s ease-in-out;
 }
-/* line 13, ../sass/project-card-style.scss */
+/* line 16, ../sass/project-card-style.scss */
 .dh-tech-item .dh-tech-img-main {
   margin: 10px;
 }
-/* line 17, ../sass/project-card-style.scss */
+/* line 20, ../sass/project-card-style.scss */
 .dh-tech-item .dh-link-stack {
   padding: 20px;
   padding-top: 30px;
 }
-/* line 22, ../sass/project-card-style.scss */
+/* line 25, ../sass/project-card-style.scss */
 .dh-tech-item .dh-tech-title {
   font-size: 2em;
   margin-top: 8px;
 }
-/* line 27, ../sass/project-card-style.scss */
+/* line 30, ../sass/project-card-style.scss */
 .dh-tech-item p {
   color: #96A7B1;
 }
-/* line 31, ../sass/project-card-style.scss */
+/* line 34, ../sass/project-card-style.scss */
 .dh-tech-item hr {
   padding: 0px;
   margin: 0px;
   margin-left: 10px;
   margin-right: 10px;
 }
-/* line 39, ../sass/project-card-style.scss */
+/* line 42, ../sass/project-card-style.scss */
 .dh-tech-item .dh-tech-stack {
   padding: 10px;
 }
-/* line 42, ../sass/project-card-style.scss */
+/* line 45, ../sass/project-card-style.scss */
 .dh-tech-item .dh-tech-stack img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 49, ../sass/project-card-style.scss */
+/* line 52, ../sass/project-card-style.scss */
 .dh-tech-item .dh-truncate {
   width: 250px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* line 64, ../sass/project-card-style.scss */
+.dh-tech-item:hover {
+  box-shadow: 0 0 20px #cccccc;
+  transform: scale(1.01);
 }
