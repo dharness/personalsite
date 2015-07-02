@@ -72,7 +72,41 @@
     }
 }
 
-/* HACK - but a small one, since loading doesnt offer this functionallity */
+/************************************* MEDIA QUERIES *************************************/
+
+@media (max-width: $screen-xs-max) {
+    .dh-blog-header {
+        font-size: 10vw;
+    }
+
+ }
+@media (min-width: $screen-sm-min) {
+    #dh-menu-button {
+        display:block!important;
+    }
+}
+@media (max-width: $screen-sm-max) {  }
+@media (min-width: $screen-md-min) {
+    .dh-blog-header {
+        font-size: 5vw;
+    }
+}
+@media (max-width: $screen-md-max) {
+    .dh-blog-header {
+        font-size: 8vw;
+    }
+    #dh-menu-button {
+        display:block!important;
+    }
+}
+@media (min-width: $screen-lg-min) {
+        .dh-blog-header {
+        font-size: 10vw;
+    }
+    #dh-menu-button {
+        display:none!important;
+    }
+}
 
 #blog-loaded {
     display:block!important;

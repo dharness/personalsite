@@ -1,10 +1,11 @@
 /*  VARIABLES */
+/* Breakpoints */
 /* FUNCTIONS */
 /* FONTS */
 @import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
 @import url(http://fonts.googleapis.com/css?family=ABeeZee);
 /* STYLES */
-/* line 31, ../sass/_utilities.scss */
+/* line 39, ../sass/_utilities.scss */
 body {
   background: white;
 }
@@ -79,8 +80,48 @@ body {
   list-style-image: none;
 }
 
-/* HACK - but a small one, since loading doesnt offer this functionallity */
-/* line 77, ../sass/blog-style.scss */
+/************************************* MEDIA QUERIES *************************************/
+@media (max-width: 767px) {
+  /* line 78, ../sass/blog-style.scss */
+  .dh-blog-header {
+    font-size: 10vw;
+  }
+}
+@media (min-width: 768px) {
+  /* line 84, ../sass/blog-style.scss */
+  #dh-menu-button {
+    display: block !important;
+  }
+}
+@media (min-width: 992px) {
+  /* line 90, ../sass/blog-style.scss */
+  .dh-blog-header {
+    font-size: 5vw;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 95, ../sass/blog-style.scss */
+  .dh-blog-header {
+    font-size: 8vw;
+  }
+
+  /* line 98, ../sass/blog-style.scss */
+  #dh-menu-button {
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 103, ../sass/blog-style.scss */
+  .dh-blog-header {
+    font-size: 10vw;
+  }
+
+  /* line 106, ../sass/blog-style.scss */
+  #dh-menu-button {
+    display: none !important;
+  }
+}
+/* line 111, ../sass/blog-style.scss */
 #blog-loaded {
   display: block !important;
 }

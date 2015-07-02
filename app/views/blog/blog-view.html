@@ -2,7 +2,8 @@
   <!-- Fonts -->
   
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/blog-style.css" />
-  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
 </header>
 
 
@@ -11,42 +12,47 @@
     
     <!-- TOP -->
     <div class="row vertical-align">
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <a href="#">
           <center>
         <img class="img-responsive dh-title-img" src="./assets/images/raw/blog.svg"/></a></center>
       </div>
-      <div class="col-lg-6">
-        
+      <div class="col-lg-6 col-md-9 col-sm-9 col-xs-9">
         <div class="panel dh-bg-panel">
           <div class="dh-blog-header">Bla Bla Blog</div>
         </div>
       </div>
+      <div id="dh-menu-button" class="col-lg-0">
+          <button data-toggle="offcanvas" data-target="#dh-blogs-menu" data-canvas="body">lello</button>
+      </div>
+
     </div>
+    
     
     <!-- CENTER -->
     <div class="row">
       
-      
-      <div class="col-lg-3 ">
+      <div id="dh-blogs-menu" class="offcanvas">
+      <div  class="col-lg-3 col-md-3">
         <div class="dh-bg-panel">
           
           <div class="dh-card dh-left-nav">
             <accordion close-others="oneAtATime">
-
+              
               <accordion-group heading="Programming" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
                 <a>On the Importance of Proof</a>
               </accordion-group>
-
+              
               <accordion-group  heading="{{group.title}}" ng-repeat="group in groups">
                 {{group.content}}
               </accordion-group>
-
+              
             </accordion>
             
             
           </div>
         </div>
+      </div>
       </div>
       
       

@@ -5,6 +5,10 @@ angular.module('dharness-blog', [])
 
 	function($scope)
 	{
+		$("#menu-toggle").click(function()
+		{
+			$("#sidebar-wrapper").toggle();
+		})
 
 		$scope.oneAtATime = true;
 
