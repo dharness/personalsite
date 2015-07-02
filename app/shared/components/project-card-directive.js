@@ -1,7 +1,6 @@
 angular.module('dharness-project-card', [])
 
 
-
 // directive for organization of component
 .directive('projectCard', [
 
@@ -10,7 +9,15 @@ angular.module('dharness-project-card', [])
 		'use strict';
 
 		return {
-			templateUrl: 'app/shared/components/project-card-template.html'
+			templateUrl: 'app/shared/components/project-card-template.html',
+			controller: function($scope)
+			{
+				$scope.expand = function(index)
+				{
+					$('#project-' + index).toggleClass('dh-truncate')
+
+				}
+			}
 		};
 	}
 ]);

@@ -60,7 +60,7 @@
 /* Base styles for the tooltip's content area */
 .tooltip:after,
 [data-tooltip]:after {
-  z-index: -99999;
+  z-index: 1000;
   padding: 8px;
   margin-left: 3px;
   background-color: #000;
