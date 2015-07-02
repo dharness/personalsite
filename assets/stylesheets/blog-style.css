@@ -109,19 +109,24 @@ body {
   #dh-menu-button {
     display: block !important;
   }
+
+  /* line 102, ../sass/blog-style.scss */
+  .canvas-slid {
+    margin-top: -200px;
+  }
 }
 @media (min-width: 1200px) {
-  /* line 103, ../sass/blog-style.scss */
+  /* line 107, ../sass/blog-style.scss */
   .dh-blog-header {
     font-size: 10vw;
   }
 
-  /* line 106, ../sass/blog-style.scss */
+  /* line 110, ../sass/blog-style.scss */
   #dh-menu-button {
     display: none !important;
   }
 }
-/* line 111, ../sass/blog-style.scss */
+/* line 115, ../sass/blog-style.scss */
 #blog-loaded {
   display: block !important;
 }
