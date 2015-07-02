@@ -66,7 +66,7 @@ body {
   text-overflow: ellipsis;
 }
 
-/* line 64, ../sass/project-card-style.scss */
+/* line 62, ../sass/project-card-style.scss */
 .dh-tech-item:hover {
   box-shadow: 0 0 20px #cccccc;
   transform: scale(1.01);
