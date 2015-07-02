@@ -38,18 +38,8 @@
                 <a>On the Importance of Proof</a>
               </accordion-group>
 
-              <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
+              <accordion-group  heading="{{group.title}}" ng-repeat="group in groups">
                 {{group.content}}
-              </accordion-group>
-
-              <accordion-group heading="Dynamic Body Content">
-                <p>The body of the accordion group grows to fit the contents</p>
-                <button class="btn btn-default btn-sm" ng-click="addItem()">Add Item</button>
-                <div ng-repeat="item in items">{{item}}</div>
-              </accordion-group>
-
-              <accordion-group is-open="status.open">
-                This is just some content to illustrate fancy headings.
               </accordion-group>
 
             </accordion>
