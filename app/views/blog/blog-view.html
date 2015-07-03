@@ -9,7 +9,7 @@
 
 <div id="blog-loaded" style="display: none;">
   <div class="container">
-    
+
     <!-- TOP -->
     <div class="row vertical-align">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
@@ -22,7 +22,7 @@
           <div class="dh-blog-header">Bla Bla Blog</div>
         </div>
       </div>
-
+      
     </div>
     
     
@@ -30,38 +30,27 @@
     <div class="row">
       
       <div id="dh-blogs-menu" >
-      <div  class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-        <div class="dh-bg-panel">
-          
-          <div class="dh-card dh-left-nav">
-            <accordion close-others="oneAtATime">
-              
-              <accordion-group heading="Programming" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
-                <a>On the Importance of Proof</a>
-              </accordion-group>
-              
-              <accordion-group  heading="{{group.title}}" ng-repeat="group in groups">
-                {{group.content}}
-              </accordion-group>
-              
-            </accordion>
+        <div  class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          <div class="dh-bg-panel">
             
-            
+            <div class="dh-card dh-left-nav">
+              <accordion close-others="oneAtATime">
+                
+                <accordion-group heading="Programming" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+                  <a>On the Importance of Proof</a>
+                </accordion-group>
+                
+                <accordion-group  heading="{{group.title}}" ng-repeat="group in groups">
+                  {{group.content}}
+                </accordion-group>
+                
+              </accordion>
+              
+              
+            </div>
           </div>
         </div>
       </div>
-      </div>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
       
       
       <div class="col-lg-6" style="overflow:scroll;">
