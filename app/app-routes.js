@@ -31,5 +31,10 @@ app.config(function($routeProvider)
 		controller: 'BlogController'
 	})
 
+	.when('/shell',
+	{
+		templateUrl: 'app/views/shell/shell.html'
+	})
+
 
 });

@@ -1,0 +1,19 @@
+@import 'utilities';
+
+.dh-shell-title {
+    font-family: 'Grand Hotel', cursive;
+    font-weight: 300;
+    font-size: 10vw;
+    color: $h-color;
+    text-align: center;
+    text-shadow: long-shadow($direction: 42deg, $length: 15px, $color: shade($background-color, 20), $fade: $background-color);
+}
+
+.dh-bottom-nav {
+	background: #FFFFFF;
+	box-shadow: 10px 10px 5px #888888;
+	img {
+		height: 150px;
+		padding: 0px!important;
+	}
+}
