@@ -5,9 +5,9 @@
 @import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
 @import url(http://fonts.googleapis.com/css?family=ABeeZee);
 /* STYLES */
-/* line 39, ../sass/_utilities.scss */
+/* line 38, ../sass/_utilities.scss */
 body {
-  background: white;
+  background: url("../images/glass.jpg");
 }
 
 /* line 3, ../sass/shell.scss */
@@ -30,20 +30,31 @@ body {
   width: 50%;
   left: 25%;
 }
-/* line 20, ../sass/shell.scss */
+/* line 21, ../sass/shell.scss */
 .dh-bottom-nav img {
+  opacity: 1 !important;
   height: 60%;
   padding: 0px !important;
   margin: 8% 0px 8% 0px !important;
+  -webkit-filter: none !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  filter: none !important;
 }
 
-/* line 27, ../sass/shell.scss */
+/* line 34, ../sass/shell.scss */
+.blur {
+  background: #CCCCCC;
+  opacity: 0.4;
+}
+
+/* line 40, ../sass/shell.scss */
 .dh-card {
   font-family: 'ABeeZee', sans-serif;
   background: white;
   border-radius: 2px;
 }
-/* line 33, ../sass/shell.scss */
+/* line 46, ../sass/shell.scss */
 .dh-card h3 {
   font-family: 'ABeeZee', sans-serif;
   padding-bottom: 3vh;

@@ -5,9 +5,9 @@
 @import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
 @import url(http://fonts.googleapis.com/css?family=ABeeZee);
 /* STYLES */
-/* line 39, ../sass/_utilities.scss */
+/* line 38, ../sass/_utilities.scss */
 body {
-  background: white;
+  background: url("../images/glass.jpg");
 }
 
 /* line 3, ../sass/project-card-style.scss */
