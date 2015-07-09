@@ -36,6 +36,6 @@ $screen-md-max: ($screen-lg-min - 1);
 
 /* STYLES */
 body {
-    background: url('../images/glass.jpg');
+    background: $background-color;
 }
 
