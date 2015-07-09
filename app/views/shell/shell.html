@@ -5,42 +5,39 @@
         
         
     </head>
+
     
-    <div class="container">
-        <h1 class="dh-shell-title"> Bla-Bla-Blog </h1>
-    </div>
+        <nav role="navigation" class="navbar navbar-default navbar-fixed-top" id="dh-selectables-nav">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a href="#/"><img class="img-responsive"  src="./assets/images/raw/home.svg"  alt="ok"></a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><center><h1 class="dh-shell-title"> Bla-Bla-Blog </h1></center></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right" >
+                <li><a href="#"><img class="img-responsive"  src="./assets/images/raw/blog.svg"  alt="ok"></a></li>
+                <li><a href="#"><img class="img-responsive"  src="./assets/images/raw/box.svg"  alt="ok"></a></li>
+                <li><a href="#"><img class="img-responsive"  src="./assets/images/raw/panda.svg"  alt="ok"></a></li>
+                <li><a href="#"><img class="img-responsive"  src="./assets/images/raw/profiterole.svg"  alt="ok"></a></li>
+            </ul>
+        </div>
+    </nav>
     
-    
-    
-    <div class="container" style="padding-bottom: 150px;">
+    <div class="container" style="padding-top: 150px;">
+
         
         <!-- CENTER -->
         <div class="row">
-            
-            <div id="dh-blogs-menu" >
-                <div  class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <div class="dh-bg-panel">
-                        
-                        <div class="dh-card dh-left-nav">
-                            <accordion close-others="oneAtATime">
-                                
-                                <accordion-group heading="Programming" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
-                                    <a>On the Importance of Proof</a>
-                                </accordion-group>
-                                
-                                <accordion-group  heading="{{group.title}}" ng-repeat="group in groups">
-                                    {{group.content}}
-                                </accordion-group>
-                                
-                            </accordion>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
             <div class="col-lg-6">
                 
                 
@@ -98,65 +95,6 @@
             <aside class="col-lg-3">
                 <p><img src="http://placehold.it/300x400&text=[ad]"/></p>
             </aside>
-        </div>
-        
-        
-        
-        <div id="footer" class="container">
-            <nav class="navbar navbar-default navbar-fixed-bottom dh-bottom-nav blur" id="dh-selectables">
-                
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="#bla-bla-blog">
-                        <img class="img-responsive dh-nav-img" src="./assets/images/raw/blog.svg" />
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="/#/art">
-                        <img class="img-responsive"  src="./assets/images/raw/box.svg" />
-                    </a>
-                </div>
-                
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="/#/aboot">
-                        <img class="img-responsive"  src="./assets/images/raw/panda.svg"  alt="ok">
-                    </a>
-                </div>
-                
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="/#/technical-profiterole">
-                        <img class="img-responsive"  src="./assets/images/raw/profiterole.svg" alt="ok">
-                    </a>
-                </div>
-            </nav>
-        </div>
-
-
-        <div class="container">
-            <nav class="navbar navbar-default navbar-fixed-bottom dh-bottom-nav" style="background: none;" id="dh-selectables">
-                
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="#bla-bla-blog">
-                        <img class="img-responsive dh-nav-img" src="./assets/images/raw/blog.svg" />
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="/#/art">
-                        <img class="img-responsive"  src="./assets/images/raw/box.svg" />
-                    </a>
-                </div>
-                
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="/#/aboot">
-                        <img class="img-responsive"  src="./assets/images/raw/panda.svg"  alt="ok">
-                    </a>
-                </div>
-                
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <a href="/#/technical-profiterole">
-                        <img class="img-responsive"  src="./assets/images/raw/profiterole.svg" alt="ok">
-                    </a>
-                </div>
-            </nav>
         </div>
         
     </div>
