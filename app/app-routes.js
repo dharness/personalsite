@@ -16,7 +16,8 @@ app.config(function($routeProvider)
 
 	.when('/aboot',
 	{
-		templateUrl: 'app/views/about/about-view.html'
+		templateUrl: 'app/views/about/about-view.html',
+		controller: 'ArtController'
 	})
 
 	.when('/art',
@@ -33,7 +34,8 @@ app.config(function($routeProvider)
 
 	.when('/shell',
 	{
-		templateUrl: 'app/views/shell/shell.html'
+		templateUrl: 'app/views/shell/shell.html',
+		controller: 'BlogController'
 	})
 
 

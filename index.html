@@ -1,6 +1,6 @@
 <!-- index.html -->
 <!DOCTYPE html>
-<html ng-app="dharness">
+<html ng-app="dharness" ng-controller="MainController">
     <head>
         
         <title> dharness </title>
@@ -14,7 +14,7 @@
         <script src="assets/node_modules/angular-animate/angular-animate.js"></script>
         <script src="assets/node_modules/bootstrap/dist/js/bootstrap.js"></script>
         <script src="assets/node_modules/angular-bootstrap/dist/ui-bootstrap-tpls.min.js"></script>
-
+        
         <!-- COMPONENTS -->
         <script type="text/javascript" src="app/shared/components/project-card-directive.js"></script>
         
@@ -23,7 +23,7 @@
         <script type="text/javascript" src="app/views/blog/blog-controller.js"></script>
         <script type="text/javascript" src="app/views/art/art-controller.js"></script>
         <script type="text/javascript" src="app/views/portfolio/profiterole-controller.js"></script>
-
+        
         
         <!-- MAIN APP FILES -->
         <script type="text/javascript" src="app/app-module.js"></script>
@@ -34,6 +34,34 @@
         <link rel="stylesheet" href="assets/node_modules/ng-tags-input/build/ng-tags-input.css">
     </head>
     <body>
+        <!-- NAV -->
+        <nav role="navigation" class="navbar navbar-default navbar-fixed-top" id="dh-selectables-nav" ng-hide="hasNav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a href="#/"><img class="img-responsive"  src="./assets/images/raw/home.svg"  alt="ok"></a>
+            </div>
+            <!-- Collection of nav links and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li ><center><h1 class="dh-shell-title"> {{pageTitle}}</h1></center></li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right" >
+                <li><a href="#bla-bla-blog"><img class="img-responsive"  src="./assets/images/raw/blog.svg"  alt="ok"></a></li>
+                    <li><a href="#art"><img class="img-responsive"  src="./assets/images/raw/box.svg"  alt="ok"></a></li>
+                    <li><a href="#aboot"><img class="img-responsive"  src="./assets/images/raw/panda.svg"  alt="ok"></a></li>
+                    <li><a href="#profiterole"><img class="img-responsive"  src="./assets/images/raw/profiterole.svg"  alt="ok"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
         <!-- this is where content will be injected -->
         <div ng-view></div>
     </body>

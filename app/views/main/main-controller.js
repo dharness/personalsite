@@ -1,9 +1,10 @@
 angular.module('dharness-main', [])
 
 
-.controller('MainController', ['$scope',
+.controller('MainController', ['$rootScope',
 
-	function($scope) {
-
+	function($rootScope)
+	{
+		$rootScope.hasNav = true;
 	}
 ]);

@@ -1,11 +1,11 @@
 angular.module('dharness-art', [])
 
 
-.controller('ArtController', ['$scope',
+.controller('ArtController', ['$rootScope', '$scope',
 
-	function($scope) {
-
-
-
+	function($rootScope, $scope)
+	{
+		$rootScope.hasNav = false;
+		$rootScope.pageTitle = "Arts & Candy"
 	}
 ]);

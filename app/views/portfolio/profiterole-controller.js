@@ -22,10 +22,13 @@ angular.module('dharness-profiterole', [])
 })
 
 
-.controller('ProfiteroleController', ['$scope', '$http', 'Project',
+.controller('ProfiteroleController', ['$rootScope', '$scope', '$http',
+	'Project',
 
-	function($scope, $http, Project)
+	function($rootScope, $scope, $http, Project)
 	{
+		$rootScope.hasNav = false;
+		$rootScope.pageTitle = "Techincal Profiterole"
 		$scope.Math = window.Math;
 		var allProjects = [];
 		$scope.projects = [];
