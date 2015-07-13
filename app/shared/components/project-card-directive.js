@@ -12,11 +12,32 @@ angular.module('dharness-project-card', [])
 			templateUrl: 'app/shared/components/project-card-template.html',
 			controller: function($scope)
 			{
-				$scope.expand = function(index)
+				$scope.$watch('projects', function()
 				{
-					$('#project-' + index).toggleClass('dh-truncate')
 
-				}
+					// loop thru all projects
+					for (var i = 0; i < $scope.projects.length; i++)
+					{
+						//clear each projects stack
+						$('#project-' + i + '-tech').html("");
+						$('#project-' + i + '-tech').niceScroll();;
+						//add the stack back
+						$scope.projects[i].techStack.sort().reverse();
+						for (var p = 0; p < $scope.projects[i].techStack.length; p++)
+						{
+							var techItem = $scope.projects[i].techStack[p];
+
+							$('#project-' + i + '-tech').html($('#project-' + i + '-tech').html() +
+								"<div class='col-lg-3'><img class='dh-tech-img' src='./assets/images/projects/tech_logos/" +
+								techItem + ".png'/></div>"
+							)
+						}
+
+					}
+
+
+				});
+
 			}
 		};
 	}

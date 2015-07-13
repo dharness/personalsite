@@ -1,49 +1,36 @@
-<head>
-	
-	<link rel="stylesheet" type="text/css" href="./assets/stylesheets/project-card-style.css">
-
-</head>
-
-<div class="dh-tech-item">
+<center>
+<div class="md-whiteframe-z3 dh-project-panel" id="project-content">
 	<div class="row">
 		
-		<div class="col-md-3">
-			<img class="img-responsive dh-tech-img-main" src="./assets/images/projects/{{project.images[0]}}"/>
-		</div>
 		
-		<div class="col-md-5">
-			<div class="dh-tech-title"> {{project.title}} </div>
-			<p id="project-{{$index}}" class="dh-truncate"> <i> {{project.description}}  </i></p>
-			<center><a style="cursor: pointer" ng-click="expand($index)" > <img width="40" src="./assets/images/profiterole/down_arrow.png"></img></a></center>
+		<div class="col-lg-4">
+			<div class="md-whiteframe-z3 dh-project-img">
+				<img class="img-responsive img-circle" src="./assets/images/projects/{{project.images[0]}}"/>
+			</div>
 		</div>
 		
 		
-		<div class="col-md-4  dh-link-stack" >
-			<div class="col-md-6 ">
-				<img class="img-responsive" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"/>
-			</div>
-			<div class="col-md-6">
-				<img class="img-responsive" src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/external_link.png"/>
-			</div>
-			
-			
-		</div>
-	</div>
-	<hr>
-	
-	<div class="row dh-tech-stack">
 		
-		<div ng-repeat="tech in project.techStack track by $index">
+		
+		<div class="col-lg-8">
 			
-			<div class="col-md-1">
-				<a href="#" data-tooltip="{{tech}}" >
-					
-					<img class="img-responsive tooltip-bottom" src="./assets/images/projects/tech_logos/{{tech}}.png"/>
-				</a>
-				
-				
+			
+			<div class="row">
+				<h2 class="dh-project-title"> {{project.title}}  </h2>
 			</div>
+			
+			
+			
+			<div class="row">
+				<p id="project-{{$index}}" class="dh-truncate"> <i> {{project.description}}  </i></p>
+			</div>
+			
+			<div class="row dh-tech-scroll" id="project-{{$index}}-tech">
+			</div>
+			
 		</div>
 		
 	</div>
 </div>
+
+</center>

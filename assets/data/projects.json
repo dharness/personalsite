@@ -1,6 +1,15 @@
 {
 	"projects": [
 		{
+			"title": "NailApp Nur",
+			"date": "2015-04-12",
+			"liveLink": "",
+			"github": "https://github.com/dharness/pricer",
+			"images": ["main_images/noodle.png"],
+			"techStack": ["bootstrap", "phantomjs", "ember", "html"],
+			"description": "The greatest love story ever told, believe me, i've looked."
+		},
+		{
 			"title": "Pricer",
 			"date": "2015-04-12",
 			"liveLink": "",
@@ -44,6 +53,16 @@
 			"techStack": ["sails", "mongodb", "bootstrap", "html", "javascript", "css"],
 			"description": "A sign up page and e-mail server for one of my programming education programs. Like many wild asperations, noam codesky got crushed by the all mighty dollar, or, lackthereof"
 
+		},
+
+		{
+			"title": "HeatherLearns",
+			"date": "2015-06-15",
+			"liveLink": "http://www.heatherlearns.tk/",
+			"github": "https://github.com/dharness/heatherlearns",
+			"images": ["main_images/heatherlearns.png"],
+			"techStack": ["node", "mongodb", "bootstrap", "html", "javascript", "css"],
+			"description": "My main educational platform, heatherlearns serves to teach heathers how to code through daily scrums, tutorials, assignments and quizes."
 		},
 
 		{

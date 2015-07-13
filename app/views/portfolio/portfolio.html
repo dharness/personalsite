@@ -1,70 +1,24 @@
-<header>
-    <!-- Fonts -->
+ 
+<div class="row">
+<center>
+<div class="dh-search-bar" >
+	<div class="col-lg-11">
+	<md-chips ng-model="searchTerms"></md-chips>
+	</div>
+	<div class="col-lg-1">
+		<md-button class="md-fab" style="background: white" aria-label="Eat cake">
+			<md-icon md-svg-src="./assets/images/search_icon.svg" ></md-icon>
+		</md-button>
+	</div>
+	
+</div>
+	 </center>
+</div>
 
-  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/portfolio-style.css" />
-  
-</header>
 
 
-<div id="art-loaded" style="display: none;">
-  <div class="container">
-    <!-- TOP -->
-    <div class="row vertical-align">
-      <div class="col-md-3">
-        <center>
-        <img class="img-responsive dh-title-img" src="./assets/images/raw/profiterole.svg"/></center>
-      </div>
-      <div class="col-md-6">
-        
-        <div class="panel dh-bg-panel">
-          <div class="dh-art-header">Technical Profiterole</div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-3"></div>
-      
-      <div class="col-md-6">
-        <tags-input ng-model="tags"></tags-input>
-      </div>
-      
-      <div class="col-md-3"></div>
-    </div>
-    
-    
-    <div class="row">
-      
-      
-      <div class="col-md-3">
-        <img class="img-responsive" src="http://placehold.it/300x300&text=[ad]"/>
-      </div>
-      
-      <div  class="col-md-6 col-sm-12">
-        <div ng-repeat="project in projects track by $index">
-            <x-project-card></x-project-card>
-        </div>
-      </div>
-      
-      <div  class="col-md-3">
-        <img class="img-responsive" ng-click="search()" src="http://placehold.it/300x300&text=[ad]"/>
-      </div>
-      
-    </div>
-    
-    
-    
-    
-    <div class="row">
-      <div class="col-md-12">
-        <hr/>
-        <div class="row">
-          <div class="col-md-5">
-            <p>© Copyright Dylan Harness 2015</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+<div ng-repeat="project in projects track by $index">
+<div class="row" ng-hide="$index == (projects.length -1)">
+		<x-project-card></x-project-card>
+	</div>
 </div>

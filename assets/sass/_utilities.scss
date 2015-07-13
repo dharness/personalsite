@@ -1,9 +1,8 @@
 /*  VARIABLES */
 
-$background-color: #ADCECC;
-$background-color: white;
-$h-color: #444442;
-$deep-blue: #2c3f52;
+$background-color: #757575;
+$dh-yellow: #ffeda4;
+$dh-dark-grey: #666666;
 
 /* Breakpoints */
 $screen-sm-min: 768px;
@@ -37,25 +36,23 @@ $screen-md-max: ($screen-lg-min - 1);
 /* STYLES */
 body {
     background: $background-color;
+    font-family: Roboto;
+    overflow: hidden;
+    position:relative;
 }
 
-#dh-selectables-nav {
-    img {
-        width: 5em;
-        transition: all .1s ease-in-out;
-        -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
-        filter:  drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
-        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-    }
+.font-yellow{
+    color: $dh-yellow;
 }
 
-#dh-selectables-nav img:hover {
-    transform: scale(1.2);
-    z-index: 1600;
-    -webkit-filter: drop-shadow(7px 7px 2px rgba(0, 0, 0, 0.5));
-    filter: drop-shadow(7px 7px 2px rgba(0, 0, 0, 0.5));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+.font-white {
+    color: white;
 }
 
+.font-medium {
+    font-size: 2vw;
+}
+
+.vcenter {
+    padding-top: 25vh;
+}

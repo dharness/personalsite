@@ -1,0 +1,188 @@
+/* Long Shadow stuff */
+
+@import 'compass';
+@import 'utilities';
+
+.dh-main-logo {
+    width: 20%;
+}
+
+
+#splash {
+  
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  z-index: 1600;
+  background: $background-color;
+
+  img {
+  	width: 20vw;
+  	height: 20 vh;
+  	padding-top: 30vh;
+  }
+}
+
+.dh-header {
+	img {
+		width: 20vw;
+  		height: 20 vh;
+	}
+}
+
+
+.dh-tab-view {
+	
+	position:relative;
+	width : 100%;
+  height : 300px; 
+}
+
+.dh-tab-view a {
+  text-decoration: none !important;
+  color: white;
+  height:100%;
+  width:100%;
+}
+
+.dh-tab-view a.visited {
+  color:white;
+}
+
+.dh-tab-view #content {
+  background-color: $background-color;
+}
+
+
+
+/** BLOG **/
+
+.dh-blog-panel {
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+	background: white;
+	width: 60vw;
+	text-align: left;
+}
+
+
+/** MISSION **/
+.dh-mission-panel {
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+	background: white;
+	width: 60vw;
+
+}
+
+/** PROJECTS **/
+.dh-project-panel {
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+	background: white;
+	width: 60vw;
+}
+
+.dh-truncate {
+	font-size: 1.3em;
+  width: 30vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.dh-search-bar {
+	width: 60vw;
+}
+
+.dh-project-img {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 200px;
+	border-radius: 110px;
+}
+
+.dh-tech-img {
+	width: 70px;
+	margin-left: -5px;
+	margin-top: 25px;
+}
+
+.dh-project-title {
+	padding-top: 5vh;
+}
+
+.dh-project-card {
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+	background: white;
+	width: 60vw;
+	height: 900px;
+}
+
+#project-content > .row .dh-tech-scroll {
+	margin-right: 20px;
+	margin-left: 20px;
+ 	overflow-x:scroll;
+    overflow-y:hidden;
+    white-space:nowrap;
+}    
+#project-content > .row .dh-tech-scroll [class*="col-lg"] {
+    float:none;
+    display:inline-block;
+}
+
+
+
+        /* Custom, iPhone Retina 
+    @media only screen and (min-width : 320px) {
+        .dh-tab-view #content {
+		  background-color:#9B8DFF;
+		}
+
+    }
+*/ 
+    /* Extra Small Devices, Phones 
+    @media only screen and (min-width : 480px) {
+        .dh-tab-view #content {
+		  background-color:#FFDC50;
+		}
+				.dh-project-img {
+			margin-left: 7vh;
+			margin-right: 7vh;
+			margin-top: 5vh;
+			border-radius: 110px;
+		}
+    }*/ 
+
+    /* Small Devices, Tablets 
+    @media only screen and (min-width : 768px) {
+    	.dh-project-img {
+			margin: 25vh;
+			border-radius: 110px;
+		}
+    }*/
+
+    /* Medium Devices, Desktops 
+    @media only screen and (min-width : 992px) {
+		.dh-tab-view #content {
+		  background-color:#FF3B71;
+		}
+
+		    .dh-project-img {
+			margin-left: 40vh;
+			margin-right: 40vh;
+			margin-bottom: -5vh;
+			margin-top: 0vh;
+			border-radius: 110px;
+		}
+    }*/
+
+    /* Large Devices, Wide Screens 
+    @media only screen and (min-width : 1200px) {
+.dh-project-img {
+	margin: 5vh;
+	border-radius: 110px;
+}
+    }*/

@@ -1,0 +1,221 @@
+/* Long Shadow stuff */
+/*  VARIABLES */
+/* Breakpoints */
+/* FUNCTIONS */
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
+@import url(http://fonts.googleapis.com/css?family=ABeeZee);
+/* STYLES */
+/* line 37, ../sass/_utilities.scss */
+body {
+  background: #757575;
+  font-family: Roboto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 44, ../sass/_utilities.scss */
+.font-yellow {
+  color: #ffeda4;
+}
+
+/* line 48, ../sass/_utilities.scss */
+.font-white {
+  color: white;
+}
+
+/* line 52, ../sass/_utilities.scss */
+.font-medium {
+  font-size: 2vw;
+}
+
+/* line 56, ../sass/_utilities.scss */
+.vcenter {
+  padding-top: 25vh;
+}
+
+/* line 6, ../sass/main.scss */
+.dh-main-logo {
+  width: 20%;
+}
+
+/* line 11, ../sass/main.scss */
+#splash {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1600;
+  background: #757575;
+}
+/* line 19, ../sass/main.scss */
+#splash img {
+  width: 20vw;
+  height: 20 vh;
+  padding-top: 30vh;
+}
+
+/* line 27, ../sass/main.scss */
+.dh-header img {
+  width: 20vw;
+  height: 20 vh;
+}
+
+/* line 34, ../sass/main.scss */
+.dh-tab-view {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+/* line 41, ../sass/main.scss */
+.dh-tab-view a {
+  text-decoration: none !important;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 48, ../sass/main.scss */
+.dh-tab-view a.visited {
+  color: white;
+}
+
+/* line 52, ../sass/main.scss */
+.dh-tab-view #content {
+  background-color: #757575;
+}
+
+/** BLOG **/
+/* line 60, ../sass/main.scss */
+.dh-blog-panel {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  background: white;
+  width: 60vw;
+  text-align: left;
+}
+
+/** MISSION **/
+/* line 70, ../sass/main.scss */
+.dh-mission-panel {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  background: white;
+  width: 60vw;
+}
+
+/** PROJECTS **/
+/* line 79, ../sass/main.scss */
+.dh-project-panel {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  background: white;
+  width: 60vw;
+}
+
+/* line 86, ../sass/main.scss */
+.dh-truncate {
+  font-size: 1.3em;
+  width: 30vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 95, ../sass/main.scss */
+.dh-search-bar {
+  width: 60vw;
+}
+
+/* line 99, ../sass/main.scss */
+.dh-project-img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 200px;
+  border-radius: 110px;
+}
+
+/* line 106, ../sass/main.scss */
+.dh-tech-img {
+  width: 70px;
+  margin-left: -5px;
+  margin-top: 25px;
+}
+
+/* line 112, ../sass/main.scss */
+.dh-project-title {
+  padding-top: 5vh;
+}
+
+/* line 116, ../sass/main.scss */
+.dh-project-card {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  background: white;
+  width: 60vw;
+  height: 900px;
+}
+
+/* line 124, ../sass/main.scss */
+#project-content > .row .dh-tech-scroll {
+  margin-right: 20px;
+  margin-left: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+/* line 131, ../sass/main.scss */
+#project-content > .row .dh-tech-scroll [class*="col-lg"] {
+  float: none;
+  display: inline-block;
+}
+
+        /* Custom, iPhone Retina 
+    @media only screen and (min-width : 320px) {
+        .dh-tab-view #content {
+		  background-color:#9B8DFF;
+		}
+
+    }
+*/
+    /* Extra Small Devices, Phones 
+    @media only screen and (min-width : 480px) {
+        .dh-tab-view #content {
+		  background-color:#FFDC50;
+		}
+				.dh-project-img {
+			margin-left: 7vh;
+			margin-right: 7vh;
+			margin-top: 5vh;
+			border-radius: 110px;
+		}
+    }*/
+    /* Small Devices, Tablets 
+    @media only screen and (min-width : 768px) {
+    	.dh-project-img {
+			margin: 25vh;
+			border-radius: 110px;
+		}
+    }*/
+    /* Medium Devices, Desktops 
+    @media only screen and (min-width : 992px) {
+		.dh-tab-view #content {
+		  background-color:#FF3B71;
+		}
+
+		    .dh-project-img {
+			margin-left: 40vh;
+			margin-right: 40vh;
+			margin-bottom: -5vh;
+			margin-top: 0vh;
+			border-radius: 110px;
+		}
+    }*/
+    /* Large Devices, Wide Screens 
+    @media only screen and (min-width : 1200px) {
+.dh-project-img {
+	margin: 5vh;
+	border-radius: 110px;
+}
+    }*/
