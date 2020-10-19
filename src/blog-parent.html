@@ -1,0 +1,10 @@
+{% include "./header.html" %}
+<div class='wrapper'>
+    {% include "./sidebar.html" %}
+    <div class='blog-content'>
+        <div class='blog-title'>
+            {% block title %}{% endblock %}
+        </div>
+            {% block content %}{% endblock %}
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class='sidebar'>
+    <div class='blog-name'>
+        <a href="/"> Naila Nur </a>
+    </div>
+    <div id="blog-titles">
+        {% for blogList in blogs %}
+            {% for year, blogs in blogList %}
+
+                <div class='blog-year'>
+                    {{ year }}
+                </div>
+                {% for blog in blogs%}
+                    <div class='blog-link'>
+                        <a href="{{blog.path}}">{{ blog.title }}</a>
+                    </div>
+                {% endfor %}
+                <br>
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>

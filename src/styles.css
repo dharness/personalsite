@@ -1,0 +1,71 @@
+.wrapper {
+    display: flex;
+}
+.blog-content {
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 30px 30px 30px 0px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    align-items: center;
+}
+
+.sidebar {
+    height: 100%;
+    overflow-y: auto;
+    width: 230px;
+    padding: 10px;
+}
+
+.blog-name {
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 2;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.blog-title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.blog-link {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.blog-text {
+    max-width: 700px;
+    line-height: 1.5;
+}
+
+.blog-year {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+.external-link {
+    color: #0592b0;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: #d1faff;
+}
+
+* {
+    box-sizing: border-box;
+}
