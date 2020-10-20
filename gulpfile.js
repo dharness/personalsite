@@ -3,45 +3,23 @@ const nunjucksRender = require('gulp-nunjucks-render');
 const del = require('del');
 const data = require('gulp-data');
 var path = require('path');
+var gls = require('gulp-live-server');
 
+const fs = require('fs');
+const { result } = require('lodash');
 var appDir = path.dirname(require.main.filename);
-const htmlPath = './src/**/*.html';
+const worksDataPath = './src/works_data.json';
+const htmlPath = './src/**/*.njk';
 const cssPath = './src/**/*.css';
 const assetsPath = './src/assets/**/**';
 
-function getBlogData() {
-    const blogs = [{
-        2020: [{
-            path: '/blogs/2020/walters-wools.html',
-            title: "Walter's Wools"
-        },
-        {
-            path: '/blogs/2020/very-vaccuum-birthday.html',
-            title: "A Very Vaccuum Birthday"
-        }
-        ]}, {
-        2019: [{
-            path: '/blogs/2019/mr-makes-a-word.html',
-            title: "Mr. Makes-A-Word"
-        }
-        ]}, {
-        2018: [{
-            path: '/blogs/2018/cards.html',
-            title: 'Cards'
-        }
-        ]}, {
-        2017: [{
-            path: '/blogs/2017/sqwak.html',
-            title: 'Sqwak'
-        }]
-    }];
-
-    return {blogs: blogs};
+function getWorksData() {
+    return JSON.parse(fs.readFileSync(worksDataPath, 'utf8'));
 }
 
 function html () {
     return src(htmlPath)
-        .pipe(data(getBlogData))
+        .pipe(data(getWorksData))
         .pipe(nunjucksRender({
             path: ['./src'] // String or Array
         }))
@@ -61,7 +39,6 @@ function assets() {
 function clean () {
     return del(['docs']);
 };
-
 
 const runTasks = series(clean, parallel(html, css, assets));
 
