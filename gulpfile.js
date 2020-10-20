@@ -3,11 +3,8 @@ const nunjucksRender = require('gulp-nunjucks-render');
 const del = require('del');
 const data = require('gulp-data');
 var path = require('path');
-var gls = require('gulp-live-server');
 
 const fs = require('fs');
-const { result } = require('lodash');
-var appDir = path.dirname(require.main.filename);
 const worksDataPath = './src/works_data.json';
 const htmlPath = './src/**/*.njk';
 const cssPath = './src/**/*.css';

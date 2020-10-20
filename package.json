@@ -9,9 +9,6 @@
     "gulp-live-server": "0.0.31",
     "gulp-nunjucks": "^5.0.1",
     "gulp-nunjucks-render": "^2.2.3",
-    "nunjucks": "^3.2.2",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-nunjucks": "^2.2.2",
     "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
