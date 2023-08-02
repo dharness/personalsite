@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
+    "@rocketseat/gatsby-theme-docs": "^4.0.1",
     "del": "^5.1.0",
     "gulp-data": "^1.3.1",
     "gulp-live-server": "0.0.31",
